@@ -28,6 +28,10 @@ jobs:
       - name: test dotnet
         run: dotnet --version
 
+      - name: test dotnet new
+        run: dotnet new console
+
+      - run: cat *.csproj
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: dotnet run
