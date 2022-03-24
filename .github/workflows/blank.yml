@@ -25,13 +25,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: test dotnet
-        run: dotnet --version
+      #- name: test dotnet
+       # run: dotnet --version
 
-      - name: test dotnet new
-        run: dotnet new console --force
+      #- name: test dotnet new
+       # run: dotnet new console --force
 
-      - run: cat *.csproj
+      #- run: cat *.csproj
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: dotnet run
